@@ -1,0 +1,12 @@
+body{
+    background: rgb(179, 238, 116);
+}
+.container{
+    width: 500px;
+    height: 200px;
+    margin: 10% auto;
+    background: rgb(143, 176, 255);
+    border-radius: 5px;
+    text-align: center;
+}
+
