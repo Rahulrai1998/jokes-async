@@ -3,17 +3,21 @@ const jokeBtn = document.querySelector("#jokeBtn");
 
 const generateJokes = async () => {
   // USING PROMISES
-  //   fetch("https://icanhazdadjoke.com/", setHeader)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       jokesDiv.innerHTML = data.joke;
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
+  // const setHeader = {
+  //     headers: {
+  //       Accept: "application/json",
+  //     },
+  //   };
+  // fetch("https://icanhazdadjoke.com/", setHeader)
+  //   .then((res) => res.json())
+  //   .then((data) => {
+  //     jokesDiv.innerHTML = data.joke;
+  //   })
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
 
   //USING ASYNC/AWAIT
-
   try {
     const setHeader = {
       headers: {
@@ -25,7 +29,7 @@ const generateJokes = async () => {
     const data = await res.json();
     jokesDiv.innerHTML = data.joke;
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 };
 
